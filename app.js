@@ -1,9 +1,17 @@
-const age = parssInt(prompt("How old are you ?"));
+const title = document.querySelector("div.hello:first-child h1");
 
-if (isNaN(age)) {
-  console.log("please write num");
-} else if (age < 18) {
-  console.log("too young")
-} else {
-  console.log("O.K.");
+console.dir(title)
+
+function handleTitleClick() {
+  title.style.color = "blue";
+  console.log("title was clicked!");
 }
+function handleMouseEnter() {
+  title.innerText = "Mouse is here!";
+}
+function handleMouseLeave() {
+  title.innerText = "Mouse is gone!";
+}
+title.addEventListener("click", handleTitleClick);
+title.addEventListener("mouseenter", handleMouseEnter);
+title.addEventListener("mouseleave", handleMouseLeave);
