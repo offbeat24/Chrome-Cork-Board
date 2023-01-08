@@ -14,7 +14,7 @@ function onJoininSubmit(event) {
   else {
     localStorage.setItem(userID, userPW);
     alert("Register success!");
-    location.href = "/html/index.html";
+    location.href = "/index.html";
   }
 }
 joininForm.addEventListener("submit", onJoininSubmit);
