@@ -9,7 +9,7 @@ function onLoginSubmit(event) {
 
   if (localStorage.getItem(userID) === userPW) {
     localStorage.setItem("loggedInID", userID);
-    location.href = "/html/board.html";
+    location.href = "/board.html";
   }
   else {
     alert("Failed!");
@@ -17,7 +17,7 @@ function onLoginSubmit(event) {
 }
 
 function joinBtnEvent() {
-  location.href = "/html/joinIn.html";
+  location.href = "/joinIn.html";
 }
 
 loginForm.addEventListener("submit", onLoginSubmit);
